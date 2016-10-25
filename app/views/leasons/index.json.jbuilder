@@ -1,0 +1,1 @@
+json.array! @leasons, partial: 'leasons/leason', as: :leason

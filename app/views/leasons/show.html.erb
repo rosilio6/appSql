@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Class name:</strong>
+  <%= @leason.class_name %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @leason.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @leason.end %>
+</p>
+
+<%= link_to 'Edit', edit_leason_path(@leason) %> |
+<%= link_to 'Back', leasons_path %>

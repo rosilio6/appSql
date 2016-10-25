@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Leasons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class name</th>
+      <th>Start</th>
+      <th>End</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leasons.each do |leason| %>
+      <tr>
+        <td><%= leason.class_name %></td>
+        <td><%= leason.start %></td>
+        <td><%= leason.end %></td>
+        <td><%= link_to 'Show', leason %></td>
+        <td><%= link_to 'Edit', edit_leason_path(leason) %></td>
+        <td><%= link_to 'Destroy', leason, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Leason', new_leason_path %>

@@ -1,0 +1,1 @@
+json.partial! "leasons/leason", leason: @leason
